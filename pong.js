@@ -56,7 +56,7 @@ class Paddle {
     }
 
     draw(ctx) {
-        ctx.fillStyle = "rgba(255, 0, 0, 1)"
+        ctx.fillStyle = "rgba(255, 255, 255, 1)"
         ctx.fillRect(this.x - (this.width / 2), this.y - (this.height / 2), this.width, this.height)
     }
 

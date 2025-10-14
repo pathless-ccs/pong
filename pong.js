@@ -15,7 +15,7 @@ class Ball {
     }
 
     draw(ctx) {
-        ctx.fillStyle = "rgb(255, 255, 255)"
+        ctx.fillStyle = "rgba(176, 5, 228, 1)"
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
         ctx.fill()
@@ -56,7 +56,7 @@ class Paddle {
     }
 
     draw(ctx) {
-        ctx.fillStyle = "rgb(255, 255, 255)"
+        ctx.fillStyle = "rgba(255, 0, 0, 1)"
         ctx.fillRect(this.x - (this.width / 2), this.y - (this.height / 2), this.width, this.height)
     }
 

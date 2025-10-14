@@ -87,6 +87,7 @@ class Pong {
         //get and clear canvas
         const canvas = document.getElementById("pong")
         this.ctx = canvas.getContext("2d")
+        this.ctx.scale(2, 2)
 
         this.ctx.textAlign = "center"
         this.ctx.textBaseline = "middle"
@@ -154,6 +155,7 @@ class Pong {
             this.ctx.fillText(`PLAYER 1 WINS`, 240, 200)
         }else if (this.P2s == MAXSCORE) {
             this.ctx.fillText(`PLAYER 2 WINS`, 240, 200)
+            this.ctx.fillText(`press space to continue`, 240, 150)
         }
 
         //next frame

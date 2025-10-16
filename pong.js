@@ -153,9 +153,10 @@ class Pong {
         }
         if (this.P1s == MAXSCORE) {
             this.ctx.fillText(`PLAYER 1 WINS`, 240, 200)
+            this.ctx.fillText(`Press Space To Continue`, 240, 250)
         }else if (this.P2s == MAXSCORE) {
             this.ctx.fillText(`PLAYER 2 WINS`, 240, 200)
-            this.ctx.fillText(`press space to continue`, 240, 250)
+            this.ctx.fillText(`Press Space To Continue`, 240, 250)
         }
 
         //next frame

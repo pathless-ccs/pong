@@ -88,11 +88,9 @@ class Pong {
         const canvas = document.getElementById("pong")
         this.ctx = canvas.getContext("2d")
         this.ctx.scale(2, 2)
-
         this.ctx.textAlign = "center"
         this.ctx.textBaseline = "middle"
         this.ctx.font = "48px serif"
-
         document.addEventListener("keydown", this.pong_keydown.bind(this))
         document.addEventListener("keyup", this.pong_keyup.bind(this))
 
@@ -107,9 +105,6 @@ class Pong {
 
         this.gamestate = INTRO
     }
-
-
-
     frame() {
         //Canvas
         this.ctx.fillStyle = "rgb(0, 0, 0)"
@@ -187,9 +182,7 @@ class Pong {
         this.ball.y = Math.floor(Math.random() * 330)
         this.ball.dx = (Math.random() < 0.5 ? -2 : 2)
         this.ball.dy = 3
-
         this.gamestate = PLAYING
-
     }
 
     new_game() {

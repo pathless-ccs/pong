@@ -15,7 +15,7 @@ class Ball {
     }
 
     draw(ctx) {
-        ctx.fillStyle = "rgba(176, 5, 228, 1)"
+        ctx.fillStyle = "rgba(255, 255, 255, 1)"
         ctx.beginPath()
         ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2)
         ctx.fill()
@@ -155,7 +155,7 @@ class Pong {
             this.ctx.fillText(`PLAYER 1 WINS`, 240, 200)
         }else if (this.P2s == MAXSCORE) {
             this.ctx.fillText(`PLAYER 2 WINS`, 240, 200)
-            this.ctx.fillText(`press space to continue`, 240, 150)
+            this.ctx.fillText(`press space to continue`, 240, 250)
         }
 
         //next frame
